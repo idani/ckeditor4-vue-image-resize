@@ -1,5 +1,9 @@
 <template>
-  <ckEditor v-model="contents" :config="editorConfig"></ckEditor>
+  <ckEditor
+    v-model="contents"
+    :editor-url="editorUrl"
+    :config="editorConfig"
+  ></ckEditor>
 </template>
 
 <script>
@@ -20,6 +24,7 @@ export default {
   },
   data() {
     return {
+      editorUrl: '/ckeditor/ckeditor.js',
       editorConfig: {
         height: this.height
       }
