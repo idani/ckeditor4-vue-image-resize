@@ -28,9 +28,18 @@ export default {
     VuetifyLogo,
     Ckeditor
   },
-  data: () => ({
-    contents: '',
-    height: 500
-  })
+  data() {
+    let imagePath = '/nekocyan.jpg'
+    if (process.env.NUXT_ENV_DEPLOY_SUBDIR) {
+      imagePath = process.env.NUXT_ENV_DEPLOY_SUBDIR + 'nekocyan.jpg'
+    }
+    return {
+      contents:
+        '<p><img alt="" height="300" src="' +
+        imagePath +
+        '" width="200" /></p>\n',
+      height: 500
+    }
+  }
 }
 </script>

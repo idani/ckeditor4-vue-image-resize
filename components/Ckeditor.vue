@@ -23,8 +23,13 @@ export default {
     }
   },
   data() {
+    let ckeditorbaseDir = '/ckeditor/ckeditor.js'
+    if (process.env.NUXT_ENV_DEPLOY_SUBDIR) {
+      ckeditorbaseDir =
+        process.env.NUXT_ENV_DEPLOY_SUBDIR + 'ckeditor/ckeditor.js'
+    }
     return {
-      editorUrl: '/ckeditor/ckeditor.js',
+      editorUrl: ckeditorbaseDir,
       editorConfig: {
         height: this.height
       }
