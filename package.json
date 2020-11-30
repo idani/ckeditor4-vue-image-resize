@@ -16,7 +16,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.11.0",
     "@nuxtjs/pwa": "^3.0.0-beta.20",
-    "ckeditor4-vue": "^1.0.1",
+    "ckeditor4-vue": "^1.2.0",
     "node-fetch": "^2.6.1",
     "nuxt": "^2.13.0"
   },
