@@ -3,6 +3,7 @@
     v-model="contents"
     :editor-url="editorUrl"
     :config="editorConfig"
+    @namespaceloaded="onNamespaceLoaded"
   ></ckEditor>
 </template>
 
@@ -23,16 +24,11 @@ export default {
     }
   },
   data() {
-    // let ckeditorbaseDir = '/ckeditor/ckeditor.js'
-    // if (process.env.NUXT_ENV_DEPLOY_SUBDIR) {
-    //   ckeditorbaseDir =
-    //     process.env.NUXT_ENV_DEPLOY_SUBDIR + 'ckeditor/ckeditor.js'
-    // }
     return {
       editorUrl: 'https://cdn.ckeditor.com/4.15.1/full-all/ckeditor.js',
       editorConfig: {
         height: this.height,
-        extraPlugins: ['image2'],
+        extraPlugins: ['image2', 'timestamp'],
         removePlugins: ['image']
       }
     }
@@ -45,6 +41,19 @@ export default {
       set(value) {
         this.$emit('input', value)
       }
+    }
+  },
+  methods: {
+    onNamespaceLoaded(CKEDITOR) {
+      // Add external `placeholder` plugin which will be available for each
+      // editor instance on the page.
+
+      let pluginBaseDir = '/ckeditor/plugins/timestamp/'
+      if (process.env.NUXT_ENV_DEPLOY_SUBDIR) {
+        pluginBaseDir =
+          process.env.NUXT_ENV_DEPLOY_SUBDIR + '/ckeditor/plugins/timestamp/'
+      }
+      CKEDITOR.plugins.addExternal('timestamp', pluginBaseDir, 'plugin.js')
     }
   }
 }
