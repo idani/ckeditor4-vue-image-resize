@@ -23,15 +23,17 @@ export default {
     }
   },
   data() {
-    let ckeditorbaseDir = '/ckeditor/ckeditor.js'
-    if (process.env.NUXT_ENV_DEPLOY_SUBDIR) {
-      ckeditorbaseDir =
-        process.env.NUXT_ENV_DEPLOY_SUBDIR + 'ckeditor/ckeditor.js'
-    }
+    // let ckeditorbaseDir = '/ckeditor/ckeditor.js'
+    // if (process.env.NUXT_ENV_DEPLOY_SUBDIR) {
+    //   ckeditorbaseDir =
+    //     process.env.NUXT_ENV_DEPLOY_SUBDIR + 'ckeditor/ckeditor.js'
+    // }
     return {
-      editorUrl: ckeditorbaseDir,
+      editorUrl: 'https://cdn.ckeditor.com/4.15.1/full-all/ckeditor.js',
       editorConfig: {
-        height: this.height
+        height: this.height,
+        extraPlugins: ['image2'],
+        removePlugins: ['image']
       }
     }
   },
