@@ -2481,20 +2481,19 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
-ckeditor4-integrations-common@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/ckeditor4-integrations-common/-/ckeditor4-integrations-common-0.1.0.tgz#523044f143a7bcf6fe33bb9786cafe897227fa92"
-  integrity sha512-Z0fOFOyIavYti3jh8u7SQCFTHTJfCF6cceIkxwnrtpTczt5nI0PI16EnknKvUOPOsHVAnmvRi10IUM+2Rooslw==
+ckeditor4-integrations-common@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/ckeditor4-integrations-common/-/ckeditor4-integrations-common-0.2.0.tgz#994a83f94e14161fa8ee15e7f0edc8735b12d8f8"
+  integrity sha512-KkHztF0bkGOnTcifWFd55j5Y9SCR3uk12SGgS6L1mZNnBeIJFCcgTwZWEHtG2aDJF7aZob7cex1CShL+SrNuow==
   dependencies:
     load-script "^1.0.0"
 
-ckeditor4-vue@^1.0.1:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/ckeditor4-vue/-/ckeditor4-vue-1.2.0.tgz#add02df7c504741ca5f7a8d1c380660d621d2836"
-  integrity sha512-JvlBnfDHrhCOoUrQ/Lfug8o+ChOVaNdVE+AuQ9b69h5K8DRZQUAvJgF9/s2L6qngx0FDAKOCpCJhbcBTWlSdAQ==
+ckeditor4-vue@^1.2.0:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/ckeditor4-vue/-/ckeditor4-vue-1.3.1.tgz#6deeec83de607b3cbfdf5cc2ee49923bc4840809"
+  integrity sha512-F5abagv2OXKbLuZjIea6BhxEoe54FtWDNRGZFnKNm9YcY24/W9VRedWuUCFwWVHFB+Gm4F5hcfF3aqoK7hPy8A==
   dependencies:
-    ckeditor4-integrations-common "^0.1.0"
-    load-script "^1.0.0"
+    ckeditor4-integrations-common "^0.2.0"
 
 class-utils@^0.3.5:
   version "0.3.6"
@@ -6212,9 +6211,9 @@ path-key@^3.0.0, path-key@^3.1.0:
   integrity sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==
 
 path-parse@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
-  integrity sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
+  integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
 path-to-regexp@0.1.7:
   version "0.1.7"
